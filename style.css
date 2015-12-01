@@ -37,6 +37,10 @@ header {
 		font-family: 'Amatic SC' 'Open Sans' Helvetica Arial sans-serif;
 		font-size: 6rem;
 		margin: 0;
+<<<<<<< HEAD
+=======
+        text-align: center;
+>>>>>>> master
 		/* border: 1px solid red; */
 	}
 
@@ -124,7 +128,11 @@ header {
 	background-color: #FF9775;
 }
 
+<<<<<<< HEAD
 	#menu-bar > span {
+=======
+	#menu-bar > a > span {
+>>>>>>> master
 		display: inline-block;
 		width: 112px;
 		height: 112px;
@@ -133,7 +141,11 @@ header {
 		
 	}
 
+<<<<<<< HEAD
 	#menu-bar > span:first-child {
+=======
+	#menu-bar > a:first-child {
+>>>>>>> master
 		float: left;
 		margin-left: 10px;
 	}
@@ -147,7 +159,22 @@ header {
 		line-height:112px;
 	}
 	
+<<<<<<< HEAD
 	#menu-bar > span:last-child {
 		float: right;
 		margin-right: 10px;
 	}
+=======
+	#menu-bar > a:last-child {
+		float: right;
+		margin-right: 10px;
+	}
+
+hr {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    height: 5px;
+    border-color: black;
+    background-color: black;
+}
+>>>>>>> master
