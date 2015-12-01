@@ -3,6 +3,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
+	
 }
 
 ul {
@@ -16,44 +17,75 @@ a { text-decoration: none; }
 
 body {
 	margin: auto;
-	max-width: 824px;
+	max-width: 600px;
 	background-color: #F8F8F8;
-	border: 1px solid black;
+box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+	/* border: 1px solid black; */
 }
 
 header {
 	background-color: rgb(200, 220, 250);
-	padding: 8px;
+	padding: 16px 24px;
 }
 
-	header > h1, header > img {
+	/* header > h1, header > img {
 		display: inline-block;
 		vertical-align: bottom;
-	}
+	} */
 
 	header > h1 {
-		border: 1px solid red;
-		font-size: 4rem;
+		font-family: 'Amatic SC' 'Open Sans' Helvetica Arial sans-serif;
+		font-size: 6rem;
 		margin: 0;
+		/* border: 1px solid red; */
 	}
 
-	header > img {
+	/* header > img {
 		border: 1px solid red;
 		margin-left: 10%;
-	}
+	} */
 
 #main-container {
-	padding: 20px 10%;
+	padding: 20px 5%;
+	text-align: center;
+	height: 600px;
+	overflow: auto;
 	background-color: rgb(244, 240, 240);
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
-	#main-container > nav {
+	#main-container > div {
+		/* border: 1px solid red; */
+	}
+	
+		#main-container > div > a {
+			display: block;
+			width: 90%;
+			padding: 24px 0;
+			margin: auto;
+			font-size: 2rem;
+			background-color: #FF845C;
+			/* border: 1px solid green; */
+		}
+
+	#main-container table {
+		border-spacing: 20px;
+		margin-bottom: 24px;
+		}
+	
+	#main-container .menu-formule {
+		font-size: 1.6rem;
+		width: 45%;
+		padding: 16px;
+		background-color: rgb(200, 220, 250);
+	}
+
+	/* #main-container > nav {
 		margin: 0;
 		padding: 0;
 	}
 
-	#main-container > nav  > ul {
+	#main-container > nav > ul {
 		margin: 0;
 		padding: 0;
 		font-size: 3rem;
@@ -61,13 +93,14 @@ header {
 		border: 1px solid red;
 	}
 
-	#main-container > nav  > ul > li {
+	#main-container > nav > ul > li {
 		display: inline-block;
 		width: 45%;
+		margin-bottom: 2%;
 		border: 1px solid blue;
 	}
 
-	#main-container > nav  > ul > li > a {
+	#main-container > nav > ul > li > a {
 		display: inline-block;
 		width: 100%;
 		height: 256px;
@@ -77,9 +110,44 @@ header {
 		transition: all ease .4s;
 		border: 1px solid red;
 	}
-		#main-container > nav  > ul > li > a:hover {
+		#main-container > nav > ul > li > a:hover {
 			background-color: #FA7D3E;
 			border-radius: 64px;
 			transform: scale(.9);
 			transition: all ease .6s;
-		}
+		} */
+
+
+#menu-bar {
+	text-align: center;
+	padding: 8px;
+	background-color: #FF9775;
+}
+
+	#menu-bar > span {
+		display: inline-block;
+		width: 112px;
+		height: 112px;
+		line-height:112px;
+		background-color: rgb(248, 230, 186);
+		
+	}
+
+	#menu-bar > span:first-child {
+		float: left;
+		margin-left: 10px;
+	}
+	
+	#manger-button {
+		display: inline-block;
+		width: 112px;
+		height: 112px;
+		border-radius: 50%;
+		background-color: rgb(248, 230, 186);
+		line-height:112px;
+	}
+	
+	#menu-bar > span:last-child {
+		float: right;
+		margin-right: 10px;
+	}
