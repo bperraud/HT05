@@ -1,0 +1,17 @@
+#main-container > * {
+    border: 1px solid green;
+    clear:both;
+    margin-bottom: 10px;
+}
+
+#main-container > * > h2 {
+    font-style: italic;
+}
+
+#main-container > div:first-child > div {
+    border: 1px solid red;
+    width: 48%;
+    display: inline-block;
+    text-align: center;
+}
+
