@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<title>L'Appli de ouf pour notre restö</title>
+	<title>Manger !</title>
 	<link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="manger.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -14,7 +14,7 @@
 <body>
 
 <header>
-	<h1>Nom du restaurant</h1>
+    <h1><a href="index.html">Passer commande</a></h1>
 	<!-- <a></a><img alt='menu' src='img/icon-menu.png' /></a> -->
 </header>
 
@@ -35,22 +35,26 @@
     
     <div>
         <h2>Votre abonnement</h2>
-        <div>bloc</div>
+        <p class="exergue">Encore 1 repas pour cette semaine</p>
+    </div>
+    
+    <div><a href="#">
+        <span>
+            /!\ Vous avez déjà utilisé tout votre abonnement pour cette semaine<br/>
+            Voulez-vous en changer ?
+        </span>
+        </a>
     </div>
 
     <div>
         <h2>Heure de venue</h2>
-        <div><span>validation</span></div>
+        <input id="heure_venue" type="time" name="hour" min="11:30" max="14:00" autocomplete="on" value="12:00" />
     </div>
-    
-    <div><a href=""><span>Valider</span></a></div>
     
 </div>
 
 <div id='menu-bar'>
-	<a href="#"><span>Picto</span></a>
-	<a id='manger-button' href='#'>MANGER !</a>
-	<a href="#"><span>Picto</span></a>
+    <a href="#">Valider</a>
 </div>
 
 </body>
