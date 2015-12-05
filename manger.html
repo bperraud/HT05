@@ -21,13 +21,13 @@
 <div id='main-container'>
     <div>
         <h2>Choix du menu</h2>
-        <div>
+        <div id="F1" class="formule" onClick="changeBgColor(this.id)">
             <h3>F1</h3>
             <p>plat principal</p>
             <p>dessert</p>
         </div>
-        <div>
-            <h3>F1</h3>
+        <div id="F2" class="formule" onClick="changeBgColor(this.id)">
+            <h3>F2</h3>
             <p>plat 1 ou plat 2</p>
             <p>dessert 1 ou dessert 2</p>
         </div>
@@ -56,6 +56,21 @@
 <div id='menu-bar'>
     <a href="#">Valider</a>
 </div>
+
+	<script>
+		
+	function changeBgColor(clicked_id) {
+		if ((clicked_id) == 'F1') {
+			document.getElementById('F1').classList.add('active');
+			document.getElementById('F2').classList.remove('active');
+		}
+		else {
+			document.getElementById('F2').classList.add('active');
+			document.getElementById('F1').classList.remove('active');
+		}
+    }
+
+	</script>
 
 </body>
 </html>
