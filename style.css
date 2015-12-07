@@ -13,7 +13,7 @@ ul {
 }
 
 a { text-decoration: none; }
-	a:visited { color: black; }
+	a, a:visited { color: inherit; }
 
 body {
 	margin: auto;
@@ -55,7 +55,6 @@ header {
 			padding: 24px 0;
 			margin: auto;
 			font-size: 2rem;
-			background-color: #FF845C;
 			/* border: 1px solid green; */
 		}
 
@@ -74,7 +73,7 @@ header {
 #menu-bar {
 	text-align: center;
 	padding: 8px;
-	background-color: #FF9775;
+	background-color: #5C5C5C;
 }
 
 	#menu-bar > a > span {
@@ -82,11 +81,10 @@ header {
 		width: 112px;
 		height: 112px;
 		line-height:112px;
-		background-color: rgb(248, 230, 186);
-		
+		background-color: #97F578;
 	}
 
-	#menu-bar > a:first-child {
+	#menu-bar > a.picto:first-child {
 		float: left;
 		margin-left: 10px;
 	}
@@ -96,17 +94,17 @@ header {
 		width: 112px;
 		height: 112px;
 		border-radius: 50%;
-		background-color: rgb(248, 230, 186);
+		background-color: rgb(200, 220, 250);
 		line-height:112px;
 		transition: all .7s;
 	}
 		#manger-button:hover {
 		transform: rotate(360deg);
-		background-color: rgb(200, 220, 250);
+		background-color: #97F578;
 		transition: all .5s;
 		}
 
-	#menu-bar > a:last-child {
+	#menu-bar > a.picto:last-child {
 		float: right;
 		margin-right: 10px;
 	}

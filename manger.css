@@ -11,6 +11,7 @@
 #main-container .formule {
 	background-color: rgb(200, 220, 250);
 	width: 45%;
+    margin: 0 8px;
 	display: inline-block;
 	text-align: center;
 	transition: all .3s;
@@ -34,7 +35,7 @@
 			#main-container .formule .plat:hover, #main-container .formule .plat.active {
 				border-color: black;	
 				transition: all .5s;
-			}	
+			}
 
 .exergue {
 	font-family: Simplicity 'Open Sans' Helvetica Arial sans-serif;
@@ -43,19 +44,24 @@
 }
 
 #heure_venue {
-	width:30%;
+	width: 30%;
+    margin-bottom: 24px;
 	text-align: center;
 	font-size: 50px;
 	font-family: "Amatic SC"
 }
 
-#menu-bar {
-	text-align: center;
-	padding: 10px;
-	background-color: #97F578;
+#valider-button {
+    display: inline-block;
+    background-color: rgb(200, 220, 250);
+    line-height: 96px;
+    height: 96px;
+    margin: 8px 0;
+    width: 80%;
+    font-size: 1.8rem;
+    transition: all .3s;
 }
-
-	#menu-bar > a {
-	display: inline;
-	background-color: none;
-	}
+#valider-button:hover {
+    background-color: rgb(157, 227, 155);
+    transition: all .5s;
+}
