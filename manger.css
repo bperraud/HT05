@@ -4,44 +4,64 @@
     margin-bottom: 10px;
 }*/
 
-#main-container > * > h2 {
-    font-style: italic;
+#main-container h2 {
+	font-style: italic;
 }
 
-#main-container > div:first-child > div {
-    border: 1px solid red;
-    width: 48%;
-    display: inline-block;
-    text-align: center;
-    transition: all .5s;
+#main-container .formule {
+	background-color: rgb(200, 220, 250);
+	width: 45%;
+    margin: 0 8px;
+	display: inline-block;
+	text-align: center;
+	transition: all .3s;
+	border: 4px solid rgb(200, 220, 250);
 }
-
-#main-container > div:first-child > div:hover {
-    background-color: rgb(200, 220, 250);
-    transition: all .75s;
-}
+	#main-container .formule:hover {
+		border-color: black;
+		transition: all .5s;
+	}
+	#main-container .formule.active {
+		background-color: rgb(157, 227, 155);
+		border: 4px solid black;
+	}
+			#main-container .formule .plat {
+				border-bottom: 2px solid rgb(200, 220, 250);	
+				transition: all .3s;
+			}
+			#main-container .formule.active .plat {
+				border-color: rgb(157, 227, 155);
+			}		
+			#main-container .formule .plat:hover, #main-container .formule .plat.active {
+				border-color: black;	
+				transition: all .5s;
+			}
 
 .exergue {
-    font-family: Simplicity;
-    font-size: 40px;
-    margin:0;
+	font-family: Simplicity 'Open Sans' Helvetica Arial sans-serif;
+	font-size: 40px;
+	margin: 0;
 }
 
 #heure_venue {
-    width:30%;
-    text-align: center;
-    font-size: 50px;
-    font-family: "Amatic SC"
-}
-
-#menu-bar {
+	width: 30%;
+    margin-bottom: 24px;
 	text-align: center;
-	padding: 10px;
-	background-color: limegreen;
+	font-size: 50px;
+	font-family: "Amatic SC"
 }
 
-	#menu-bar > a {
-		display: inline;
-		background-color: none;
-		
-	}
+#valider-button {
+    display: inline-block;
+    background-color: rgb(200, 220, 250);
+    line-height: 96px;
+    height: 96px;
+    margin: 8px 0;
+    width: 80%;
+    font-size: 1.8rem;
+    transition: all .3s;
+}
+#valider-button:hover {
+    background-color: rgb(157, 227, 155);
+    transition: all .5s;
+}

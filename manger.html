@@ -21,15 +21,15 @@
 <div id='main-container'>
     <div>
         <h2>Choix du menu</h2>
-        <div>
+        <div id="F1" class="formule" onClick="changeBgColor(this.id)">
             <h3>F1</h3>
             <p>plat principal</p>
             <p>dessert</p>
         </div>
-        <div>
-            <h3>F1</h3>
-            <p>plat 1 ou plat 2</p>
-            <p>dessert 1 ou dessert 2</p>
+        <div id="F2" class="formule" onClick="changeBgColor(this.id)">
+            <h3>F2</h3>
+            <p><span id="plat1" class="plat" onClick="changeBgColor(this.id)">plat 1</span> ou <span id="plat2" class="plat" onClick="changeBgColor(this.id)">plat 2</span></p>
+            <p><span id="dessert1" class="plat" onClick="changeBgColor(this.id)">dessert 1</span> ou <span id="dessert2" class="plat" onClick="changeBgColor(this.id)">dessert 2</span></p>
         </div>
     </div>
     
@@ -54,8 +54,39 @@
 </div>
 
 <div id='menu-bar'>
-    <a href="#">Valider</a>
+    <a id="valider-button" href="#">Valider</a>
 </div>
+
+	<script>
+
+	function changeBgColor(clicked_id) {
+		if ((clicked_id) == 'F1') {
+			document.getElementById('F1').classList.add('active');
+			document.getElementById('F2').classList.remove('active');
+		}
+		else if ((clicked_id) == 'F2') {
+			document.getElementById('F2').classList.add('active');
+			document.getElementById('F1').classList.remove('active');
+		}
+		else if ((clicked_id) == 'plat1') {
+			document.getElementById('plat1').classList.add('active');
+			document.getElementById('plat2').classList.remove('active');
+		}
+		else if ((clicked_id) == 'plat2') {
+			document.getElementById('plat2').classList.add('active');
+			document.getElementById('plat1').classList.remove('active');
+		}
+		else if ((clicked_id) == 'dessert1') {
+			document.getElementById('dessert1').classList.add('active');
+			document.getElementById('dessert2').classList.remove('active');
+		}
+		else if ((clicked_id) == 'dessert2') {
+			document.getElementById('dessert2').classList.add('active');
+			document.getElementById('dessert1').classList.remove('active');
+		}
+	}
+
+	</script>
 
 </body>
 </html>
